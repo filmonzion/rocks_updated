@@ -1,0 +1,31 @@
+html {
+    /* background-image: url("./images/html-main-bg.jpg"); */
+    
+}
+
+
+#logo {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+#main-pic {
+    display: block;
+    height: 500px;
+    width: auto;
+
+}
+
+#about-us {
+    margin-top: 100px;
+}
+
+#button {
+    margin-top: 25px;
+
+}
+
+#rocks {
+    text-align: center;
+}
