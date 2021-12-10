@@ -6,13 +6,13 @@ html {
 
 #logo {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 #main-pic {
     display: block;
-    height: 500px;
+    height: 600px;
     width: auto;
 
 }
@@ -26,6 +26,35 @@ html {
 
 }
 
+#footer {
+   width: 100%;
+   height: auto; 
+   position: relative;
+   bottom: 0;
+   border-top: 1px solid black;
+
+}
+
 #rocks {
     text-align: center;
+       
 }
+
+#Products {
+    text-align: center;
+}
+
+.product-img {
+    display: block;
+    width: 500px;
+    height: auto;
+}
+
+.product-row {
+    padding-top: 5px;
+}
+
+#product-secondCol {
+    margin-top: 100px;
+}
+
