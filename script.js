@@ -6,7 +6,7 @@
 let thousandButton = document.getElementById("thousandButton");
 if(thousandButton) {
 thousandButton.addEventListener('click',  () => {
-        var prodcutList =  {name:"Rocks from local beach", price : "$1000"};
+        var prodcutList =  {photo: '<img src="./images/small-size-rock.jpg  class="product-img">', name:"Rocks from local beach", price : "$1000"};
         localStorage.setItem("products", JSON.stringify(prodcutList));
         window.location.href =  "./prodcut.html";     
 } )
@@ -15,7 +15,7 @@ thousandButton.addEventListener('click',  () => {
 let twoThousandButton = document.getElementById("twoThousandButton");
 if(twoThousandButton) {
 twoThousandButton.addEventListener('click',  () => {
-        var prodcutList =  {name:"Shiny Rocks", price : "$2000"};
+        var prodcutList =  {photo: '<img src="./images/white-rock.jpg"  class="product-img">', name:"Shiny Rocks", price : "$2000"};
         localStorage.setItem("products", JSON.stringify(prodcutList));
         window.location.href =  "./prodcut.html";     
 } )
@@ -33,6 +33,7 @@ aboutButton.addEventListener('click', () => {
 
 if(document.URL.indexOf("prodcut.html")) {
     let prodcutList = JSON.parse(localStorage.getItem("products"))
+    document.getElementById("productImg").innerHTML = prodcutList.photo;
     document.getElementById("productTitle").innerText = prodcutList.name;
     document.getElementById("productPrice").innerText = prodcutList.price;
 
