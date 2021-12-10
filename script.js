@@ -6,7 +6,7 @@
 let thousandButton = document.getElementById("thousandButton");
 if(thousandButton) {
 thousandButton.addEventListener('click',  () => {
-        var prodcutList =  {photo: '<img src="./images/small-size-rock.jpg  class="product-img">', name:"Rocks from local beach", price : "$1000"};
+        var prodcutList =  {photo: '<img src="./images/html-main-bg.jpg"  class="product-img">', name:"Rocks from local beach", price : "$1000"};
         localStorage.setItem("products", JSON.stringify(prodcutList));
         window.location.href =  "./prodcut.html";     
 } )
@@ -20,6 +20,26 @@ twoThousandButton.addEventListener('click',  () => {
         window.location.href =  "./prodcut.html";     
 } )
 }
+
+
+let threeThousandButton = document.getElementById("threeThousandButton");
+if(threeThousandButton) {
+threeThousandButton.addEventListener('click',  () => {
+        var prodcutList =  {photo: '<img src="./images/john-salzarulo-wtjrpjZABcQ-unsplash.jpg"  class="product-img">', name:"Dry Rocks", price : "$3000"};
+        localStorage.setItem("products", JSON.stringify(prodcutList));
+        window.location.href =  "./prodcut.html";     
+} )
+}
+
+let fourThousandButton = document.getElementById("fourThousandButton");
+if(fourThousandButton) {
+fourThousandButton.addEventListener('click',  () => {
+        var prodcutList =  {photo: '<img src="./images/wil-stewart--m9PKhID7Nk-unsplash.jpg"  class="product-img">', name:"Wet Rocks", price : "$4000"};
+        localStorage.setItem("products", JSON.stringify(prodcutList));
+        window.location.href =  "./prodcut.html";     
+} )
+}
+
 
    
 
