@@ -52,7 +52,6 @@ fourThousandButton.addEventListener('click',  () => {
 } )
 }
 
-
 let aboutButton = document.getElementById("about-button");
 if(aboutButton) {
 aboutButton.addEventListener('click', () => {
