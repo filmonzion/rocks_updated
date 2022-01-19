@@ -1,4 +1,3 @@
-
 // var productList =  { productOne:{name:"Rocks from local beach", price : "$1000"}}
 // localStorage.setItem("products", JSON.stringify(productList));
 // productList = JSON.parse(localStorage.getItem("products"))
