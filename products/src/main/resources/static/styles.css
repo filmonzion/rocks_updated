@@ -1,0 +1,63 @@
+html {
+    /* background-size: cover;
+    background-image: url("./images/html-main-bg.jpg");
+    height: auto; */
+    
+}
+
+
+#logo {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+#main-pic {
+    display: block;
+    height: 600px;
+    width: auto;
+
+}
+
+#about-us {
+    margin-top: 100px;
+}
+
+#button {
+    margin-top: 25px;
+
+}
+
+#footer {
+   width: 100%;
+   height: auto; 
+   position: relative;
+   bottom: 0;
+   border-top: 1px solid black;
+   margin-top: 10px;
+
+}
+
+#rocks {
+    text-align: center;
+       
+}
+
+#Products {
+    text-align: center;
+}
+
+.product-img {
+    display: block;
+    width: 500px;
+    height: auto;
+}
+
+.product-row {
+    padding-top: 5px;
+}
+
+#product-secondCol {
+    margin-top: 100px;
+}
+
