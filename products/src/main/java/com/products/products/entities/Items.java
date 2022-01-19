@@ -1,5 +1,7 @@
 package com.products.products.entities;
 
+import com.products.products.controllers.dto.ItemsDto;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -18,6 +20,9 @@ public class Items {
     //creating constructor
 
     public Items() {
+    }
+
+    public Items(ItemsDto itemsDto) {
     }
 
     //Another constructor with fields
