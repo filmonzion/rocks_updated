@@ -11,12 +11,12 @@ const request = new XMLHttpRequest();
 //                if(request.responseText==="Ok"){
 //                    alert("Message Posted");
 //                }
-                console.log(request.responseText);
+               console.log(request.responseText);
             }
         });
-        request.open("GET","http://localhost:8080/product");
-//        request.setRequestHeader("Content-Type", "application/json");
-        request.send(null);
+        request.open("POST","http://localhost:8080/products");
+        request.setRequestHeader("Content-Type", "application/json");
+        request.send(JSON.stringify({itemName: "Rock 001", itemDescription: "Abc", itemPrice:"12", itemQuantity: "4",imageUrl:"ddd" }));
 
 })
 
