@@ -14,7 +14,7 @@ const request = new XMLHttpRequest();
                 console.log(request.responseText);
             }
         });
-        request.open("GET","http://localhost:8080/product-form.html");
+        request.open("GET","http://localhost:8080/product");
 //        request.setRequestHeader("Content-Type", "application/json");
         request.send(null);
 
