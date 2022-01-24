@@ -15,10 +15,10 @@ public class Items {
     private String itemName;
     private String itemDescription;
     private String itemPrice;
+    private String itemQuantity;
     private String imageUrl;
 
     //creating constructor
-
     public Items() {
     }
 
@@ -27,10 +27,11 @@ public class Items {
 
     //Another constructor with fields
 
-    public Items(String itemName, String itemDescription, String itemPrice, String imageUrl) {
+    public Items(String itemName, String itemDescription, String itemPrice, String itemQuantity, String imageUrl) {
         this.itemName = itemName;
         this.itemDescription = itemDescription;
         this.itemPrice = itemPrice;
+        this.itemQuantity = itemQuantity;
         this.imageUrl = imageUrl;
     }
 
@@ -66,6 +67,14 @@ public class Items {
 
     public void setItemPrice(String itemPrice) {
         this.itemPrice = itemPrice;
+    }
+
+    public String getItemQuantity() {
+        return itemQuantity;
+    }
+
+    public void setItemQuantity(String itemQuantity) {
+        this.itemQuantity = itemQuantity;
     }
 
     public String getImageUrl() {

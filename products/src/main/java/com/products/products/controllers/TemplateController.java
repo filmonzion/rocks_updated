@@ -17,4 +17,8 @@ public class TemplateController {
     public String about(){
         return "about";
     }
+    @GetMapping("/product-form.html")
+    public String productForm(){
+        return "product-form";
+    }
 }
