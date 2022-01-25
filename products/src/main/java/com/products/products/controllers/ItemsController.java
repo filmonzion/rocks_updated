@@ -66,7 +66,18 @@ public class ItemsController {
 
     }
 
+    @DeleteMapping("/{id}")
+    public Items deleteItems(@PathVariable Integer id){
+        Optional<Items> itemsToDeleteOptional = itemsRepository.findById(id);
 
+        if(itemsToDeleteOptional.isEmpty()){
+            return null;
+        }
+        Items itemsToDelete = itemsToDeleteOptional.get();
+        itemsRepository.delete(itemsToDelete);
+
+        return itemsToDelete;
+    }
 
 //    @GetMapping
 //    public Iterable<Items> getAllItems(){

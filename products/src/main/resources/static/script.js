@@ -65,6 +65,11 @@ if(document.URL.indexOf("product.html")) {
     document.getElementById("productPrice").innerText = productList.price;
     document.getElementById("productDescription").innerText = productList.productDescription;
 
+
+     } )
+
+    }
+
 }
 
 
