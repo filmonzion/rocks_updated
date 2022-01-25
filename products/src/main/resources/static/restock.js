@@ -17,6 +17,7 @@ const request = new XMLHttpRequest();
         request.open('PUT',`http:\\localhost:8080\products\${itemId}`);
         request.setRequestHeader("Content-Type", "application/json");
         request.send(JSON.stringify({itemId: itemId, itemQuantity: itemQuantity}));
+        //this is comment
 
 })
 
