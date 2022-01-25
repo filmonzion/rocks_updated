@@ -14,9 +14,9 @@ const request = new XMLHttpRequest();
                console.log(request.responseText);
             }
         });
-        request.open("POST","http://localhost:8080/products");
+        request.open('PUT',`http:\\localhost:8080\products\${itemId}`);
         request.setRequestHeader("Content-Type", "application/json");
-        request.send(JSON.stringify({itemName: "Rock 001", itemDescription: "Abc", itemPrice:"12", itemQuantity: "4",imageUrl:"ddd" }));
+        request.send(JSON.stringify({itemId: itemId, itemQuantity: itemQuantity}));
 
 })
 
