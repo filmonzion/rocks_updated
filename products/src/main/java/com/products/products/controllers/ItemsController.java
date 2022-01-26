@@ -32,6 +32,11 @@ public class ItemsController {
         return itemsRepository.findAll();
     }
 
+    @GetMapping("/{id}")
+    public Optional<Items> getAmount(@PathVariable int id){
+        return itemsRepository.findById(id);
+    }
+
     //Post mapping
     @PostMapping
     public Items addItems(@RequestBody Items items){

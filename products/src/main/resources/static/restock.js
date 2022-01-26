@@ -5,12 +5,10 @@ addBtn.addEventListener("click", () => {
 const itemId1 = document.getElementById("itemId").value;
 const  itemQuantity1 = document.getElementById("itemQuantity").value;
 
+
 const request = new XMLHttpRequest();
         request.addEventListener("readystatechange", () => {
             if(request.readyState===4) {
-//                if(request.responseText==="Ok"){
-//                    alert("Message Posted");
-//                }
                console.log(request.responseText);
             }
         });
